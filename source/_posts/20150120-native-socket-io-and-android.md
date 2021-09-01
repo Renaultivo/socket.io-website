@@ -40,8 +40,13 @@ We must remember adding the internet permission to `AndroidManifest.xml`.
 ```xml
 <!-- app/AndroidManifest.xml -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    
     <uses-permission android:name="android.permission.INTERNET" />
-    ...
+    
+    <application
+        ...
+        android:usesCleartextTraffic="true" />
+    
 </manifest>
 ```
 
